@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/create_profile.xml" />
+        <ignore path="res/layout/dtrew.xml" />
+        <ignore path="res/layout/terms.xml" />
+        <ignore path="res/layout/test.xml" />
+        <ignore path="res/layout/test_one.xml" />
+        <ignore path="res/layout/test_two.xml" />
+    </issue>
+</lint>

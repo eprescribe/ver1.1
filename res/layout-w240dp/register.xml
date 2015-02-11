@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        android:background="@drawable/blue"
+        android:padding="10dp"
+        tools:ignore="TextFields" >
+
+        <TextView
+            android1:id="@+id/tvedTitle"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentTop="true"
+            android1:text="Please Fill in The Patient Details to Create a Profile: "
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <requestFocus />
+
+        <Button
+            android1:id="@+id/bedSave"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentBottom="true"
+            android1:layout_alignRight="@+id/tvedTitle"
+            android1:layout_marginBottom="7dp"
+            android1:text="Next" />
+
+        <TextView
+            android1:id="@+id/tvedUsername"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/tvedTitle"
+            android1:layout_below="@+id/tvedTitle"
+            android1:layout_marginTop="12dp"
+            android1:text="Please Choose a Username:"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etedUsername"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/tvedUsername"
+            android1:ems="10"
+            android1:hint="Please Type a Username"
+            android1:inputType="textPersonName" />
+
+        <TextView
+            android1:id="@+id/tvedAge"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/etedUsername"
+            android1:layout_below="@+id/etedUsername"
+            android1:layout_marginTop="12dp"
+            android1:text="Please Enter the Patient Age:" />
+
+        <EditText
+            android1:id="@+id/etedAge"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/tvedAge"
+            android1:layout_marginTop="12dp"
+            android1:ems="10"
+            android1:hint="Please Type the Patient&apos;s Age"
+            android1:inputType="numberSigned" />
+
+        <EditText
+            android1:id="@+id/etedSex"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/etedAge"
+            android1:layout_below="@+id/tvedSex"
+            android1:layout_marginTop="12dp"
+            android1:ems="10"
+            android1:hint="Please Type the Patient&apos;s Sex" />
+
+        <TextView
+            android1:id="@+id/tvedSex"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/etedAge"
+            android1:layout_marginTop="12dp"
+            android1:text="Male/Female?"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android1:id="@+id/tvedEducation"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/etedSex"
+            android1:layout_marginTop="12dp"
+            android1:text="Number of Years of Formal Education:"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etedEducation"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/tvedEducation"
+            android1:layout_marginTop="12dp"
+            android1:ems="10"
+            android1:hint="Please indicate numbers of formal education"
+            android1:inputType="numberSigned" />
+
+        <TextView
+            android1:id="@+id/tvedLanguage"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/etedEducation"
+            android1:layout_below="@+id/etedEducation"
+            android1:layout_marginTop="12dp"
+            android1:text="Is English Your First Language?"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etedLanguage"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/tvedLanguage"
+            android1:layout_below="@+id/tvedLanguage"
+            android1:layout_marginTop="12dp"
+            android1:ems="10"
+            android1:hint="Please Type yes or no" />
+
+        <TextView
+            android1:id="@+id/tvedStroke"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/etedLanguage"
+            android1:layout_below="@+id/etedLanguage"
+            android1:layout_marginTop="12dp"
+            android1:text="Has the Patient Ever Suffered a Stroke?"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etedStroke"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/tvedStroke"
+            android1:layout_marginTop="12dp"
+            android1:ems="10"
+            android1:hint="Please Type yes or no" />
+
+        <TextView
+            android1:id="@+id/tvedDementia"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/etedStroke"
+            android1:layout_marginTop="12dp"
+            android1:text="Has The Patient Ever Been Diagnosed With Dementia?"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etedDementia"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentRight="true"
+            android1:layout_below="@+id/tvedDementia"
+            android1:layout_marginTop="12dp"
+            android1:ems="10"
+            android1:hint="Please Type yes or no" />
+
+        <TextView
+            android1:id="@+id/tvedPsych"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/etedDementia"
+            android1:layout_marginTop="12dp"
+            android1:text="Has the Patient Ever Diagnosed with Pyschological Disorder? Please Indicate"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etedPsych"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/tvedPsych"
+            android1:layout_marginTop="12dp"
+            android1:ems="10"
+            android1:hint="Please Type yes or no with details" />
+    </RelativeLayout>
+
+</ScrollView>

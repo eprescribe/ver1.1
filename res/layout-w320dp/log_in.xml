@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android1:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android1:id="@+id/tvUsername"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_marginTop="12dp"
+            android1:text="Username:"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etUsername"
+            android1:layout_width="275dp"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/tvUsername"
+            android1:ems="10"
+            android1:hint="Username"
+            android1:inputType="textPersonName" />
+
+        <TextView
+            android1:id="@+id/tvPassword"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_marginTop="12dp"
+            android1:text="Password"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etPassword"
+            android1:layout_width="270dp"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/tvPassword"
+            android1:ems="10"
+            android1:hint="Password"
+            android1:inputType="textPassword" />
+
+        <Button
+            android1:id="@+id/bLogIn"
+            android1:layout_width="132dp"
+            android1:layout_height="wrap_content"
+            android1:layout_marginTop="12dp"
+            android1:text="Log In" />
+
+    </LinearLayout>
+
+</ScrollView>

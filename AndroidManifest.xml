@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hope.hopeuni"
+    android:versionCode="1"
+    android:versionName="1.0" >
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.trinity.eprescribe.Splash"
+            android:label="E-Prescribe"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trinity.eprescribe.Options"
+            android:label="Log In or Register"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.trinity.eprescribe.Options" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trinity.eprescribe.CreateProfile"
+            android:label="Create A Profile" >
+            <intent-filter>
+                <action android:name="com.trinity.eprescribe.CreateProfile" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trinity.eprescribe.Profile"
+            android:label="Profile"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.trinity.eprescribe.Profile" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trinity.eprescribe.Terms"
+            android:label="Terms of Use"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.trinity.eprescribe.Terms" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trinity.eprescribe.LogIn"
+            android:label="Log In" >
+            <intent-filter>
+                <action android:name="com.trinity.eprescribe.LogIn" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+               <activity
+            android:name="com.trinity.eprescribe.Register"
+            android:label="Register" >
+            <intent-filter>
+                <action android:name="com.trinity.eprescribe.Register" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                       <activity
+            android:name="com.trinity.eprescribe.Report"
+            android:label="Test Report" >
+            <intent-filter>
+                <action android:name="com.trinity.eprescribe.Report" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

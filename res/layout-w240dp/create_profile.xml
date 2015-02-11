@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        android:background="@drawable/blue"
+        android:padding="10dp"
+        tools:ignore="TextFields" >
+
+        <TextView
+            android1:id="@+id/tvTitle"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentTop="true"
+            android1:text="Please fill in your details to create Profile"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <requestFocus />
+
+        <TextView
+            android1:id="@+id/tvUsername"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/tvTitle"
+            android1:layout_below="@+id/tvTitle"
+            android1:layout_marginTop="12dp"
+            android1:text="Please Choose a Username:"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etUsername"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/tvUsername"
+            android1:ems="10"
+            android1:hint="Please Type a Username"
+            android1:inputType="textPersonName" />
+
+        <TextView
+            android1:id="@+id/tvAge"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/etUsername"
+            android1:layout_below="@+id/etUsername"
+            android1:layout_marginTop="12dp"
+            android1:text="Please Enter the Patient Age:" />
+
+    
+
+        <RadioGroup
+            android1:id="@+id/radioSex"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content" >
+        </RadioGroup>
+
+        <TextView
+            android1:id="@+id/tvDementia"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/etStroke"
+            android1:layout_marginTop="12dp"
+            android1:text="Has The Patient Ever Been Diagnosed With Dementia?"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android1:id="@+id/tvPsych"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/etDementia"
+            android1:layout_marginTop="12dp"
+            android1:text="Has the Patient Ever Diagnosed with Pyschological Disorder? Please Indicate"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android1:id="@+id/tvLanguage"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/etEducation"
+            android1:layout_below="@+id/etEducation"
+            android1:text="Tick below If English is not your first language."
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android1:id="@+id/TextView01"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/radioMale"
+            android1:layout_below="@+id/etAge"
+            android1:text="Sex :"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android1:id="@+id/bNext"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignRight="@+id/etPsych"
+            android1:layout_below="@+id/etPsych"
+            android1:layout_marginTop="46dp"
+            android1:text="Next" />
+
+        <CheckBox
+            android1:id="@+id/checkBox1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/tvLanguage"
+            android1:layout_below="@+id/tvLanguage"
+            android1:text="Yes" />
+
+        <EditText
+            android1:id="@+id/etAge"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/tvAge"
+            android1:layout_below="@+id/tvAge"
+            android1:ems="10"
+            android1:hint="Please Type the Patient&apos;s Age"
+            android1:inputType="numberSigned" />
+
+        <RadioButton
+            android1:id="@+id/radioMale"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/etAge"
+            android1:layout_below="@+id/TextView01"
+            android1:checked="true"
+            android1:text="@string/radio_male" />
+
+        <RadioButton
+            android1:id="@+id/radioFemale"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/radioMale"
+            android1:layout_below="@+id/radioMale"
+            android1:text="@string/radio_female" />
+
+        <TextView
+            android1:id="@+id/tvEducation"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/radioFemale"
+            android1:layout_below="@+id/radioFemale"
+            android1:text="Number of Years of Formal Education:"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android1:id="@+id/etEducation"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/tvEducation"
+            android1:layout_below="@+id/tvEducation"
+            android1:ems="10"
+            android1:hint="Please indicate numbers of formal education"
+            android1:inputType="numberSigned" />
+
+        <EditText
+            android1:id="@+id/etStroke"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/tvStroke"
+            android1:layout_below="@+id/tvStroke"
+            android1:ems="10"
+            android1:hint="Please Type yes or no" />
+
+        <EditText
+            android1:id="@+id/etDementia"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/tvDementia"
+            android1:layout_below="@+id/tvDementia"
+            android1:ems="10"
+            android1:hint="Please Type yes or no" />
+
+        <EditText
+            android1:id="@+id/etPsych"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/tvPsych"
+            android1:layout_below="@+id/tvPsych"
+            android1:ems="10"
+            android1:hint="Please Type yes or no with details" />
+
+        <EditText
+            android1:id="@+id/etLanguage"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentRight="true"
+            android1:layout_below="@+id/tvLanguage"
+            android:hint="Enter other language"
+            android1:ems="10" />
+
+        <TextView
+            android1:id="@+id/tvStroke"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignLeft="@+id/checkBox1"
+            android1:layout_below="@+id/etLanguage"
+            android1:text="Has the Patient Ever Suffered a Stroke?"
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+</ScrollView>

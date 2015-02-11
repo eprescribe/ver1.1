@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="I confirm that I understand that the information that I provide here is used for study and research purposes.
+I understand that my participation is voluntary and that I agree to take part in this research."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/bDecline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bAccept"
+        android:layout_alignBottom="@+id/bAccept"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:text="Decline" />
+
+    <Button
+        android:id="@+id/bAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="40dp"
+        android:text="Accept" />
+
+</RelativeLayout>
